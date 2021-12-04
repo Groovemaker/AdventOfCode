@@ -55,10 +55,6 @@ Reader.Data.Epsilon = {}
 -- The Sigma value will be declared with the decoded readings
 Reader.Data.Sigma = 0
 
---- File Initialization
-
-
-
 -- Reader.PowerReadings() | Purpose: Decode the Binary Report's power readings
 function Reader.PowerReadings(FName)
 
