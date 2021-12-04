@@ -17,24 +17,32 @@ InputFile = File.open(fileName)
 arr = InputFile.each_line {|line|
     # Parse Submarine Commands and its args
     if line[0..6] == "forward"
-        print "Command: <" + line[0..6] + "> | Argument: "
-        print line[8..-1] + "\n"
-        horizontal += line[8..-1].to_i
+        command = line[0..6]
+        arg = line[8..-1]
+        print "Command: <" + command + "> | Argument: "
+        print arg + "\n"
+        horizontal += arg.to_i
     end
     if line[0..3] == "back"
-        print "Command: <" + line[0..6] + "> | Argument: "
-        print line[5..-1] + "\n"
-        horizontal -= line[5..-1].to_i
+        command = line[0..3]
+        arg = line[5..-1]
+        print "Command: <" + command + "> | Argument: "
+        print arg + "\n"
+        horizontal -= arg.to_i
     end
     if line[0..3] == "down"
-        print "Command: <" + line[0..3] + "> | Argument: "
-        print line[5..-1] + "\n"
-        vertical += line[5..-1].to_i
+        command = line[0..3]
+        arg = line[5..-1]
+        print "Command: <" + command + "> | Argument: "
+        print arg + "\n"
+        vertical += arg.to_i
     end
     if line[0..1] == "up"
-        print "Command: <" + line[0..1] + "> | Argument: "
-        print line[3..-1] + "\n"
-        vertical -= line[3..-1].to_i
+        command = line[0..1]
+        arg = line[3..-1]
+        print "Command: <" + command + "> | Argument: "
+        print arg + "\n"
+        vertical -= arg.to_i
     end
 }
 
