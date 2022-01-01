@@ -55,6 +55,21 @@ Reader.Data.Epsilon = {}
 -- The Sigma value will be declared with the decoded readings
 Reader.Data.Sigma = 0
 
+
+-- These will hold Life Support Values
+
+Reader.Data.CO2on = {}
+Reader.Data.CO2off = {}
+Reader.Data.CO2 = {}
+
+
+Reader.Data.EpsilonOn = {}
+Reader.Data.EpsilonOff = {}
+Reader.Data.Epsilon = {}
+
+
+
+
 -- Reader.PowerReadings() | Purpose: Decode the Binary Report's power readings
 function Reader.PowerReadings(FName)
 
